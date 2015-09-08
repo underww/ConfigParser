@@ -32,7 +32,8 @@ A Simple Configuration File Parser in C++11
     int x, y, z;
     config.get("values", x, y, z);
     
-    config.set("values", 5, 6, 7, 8, 9);
+    config.set("values", 5, 6, 7, 8, 9); // change values
+    config.set("window_size", width, height); // create new value
     
     std::vector<int> vector;
     config.get("values", vector);
